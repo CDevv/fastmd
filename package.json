@@ -1,0 +1,17 @@
+{
+  "name": "electron-notepad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "cdev",
+  "license": "ISC",
+  "dependencies": {
+    "about-window": "^1.15.2",
+    "codemirror": "^5.64.0",
+    "electron": "^16.0.2",
+    "showdown": "^1.9.1"
+  }
+}

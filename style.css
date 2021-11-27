@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(34, 34, 34);
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+textarea {
+    color: white;
+    width: 400px;
+    height: 600px;
+}
+
+div#result {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    height: 542px;
+}

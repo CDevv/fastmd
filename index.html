@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastMD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="node_modules/codemirror/theme/material-darker.css">
+</head>
+
+<body>
+    <textarea id="editor">
+# FastMD
+Hello! Welcome to FastMD! This is a simple markdown editor
+
+## This is made with:
+* Electron
+* Code Mirror
+* Showdown
+
+## Where to go?
+Just use the editor in the left side :)
+    </textarea>
+    <script src="node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="node_modules/codemirror/mode/markdown/markdown.js"></script>
+    <script src="renderer.js"></script>
+    <div id="result">
+        <h1 id="fastmd">FastMD</h1>
+        <p>Hello! Welcome to FastMD! This is a simple markdown editor</p>
+        <h2 id="thisismadewith">This is made with:</h2>
+        <ul>
+            <li>Electron</li>
+            <li>Code Mirror</li>
+            <li>Showdown</li>
+        </ul>
+        <h2 id="wheretogo">Where to go?</h2>
+        <p>Just use the editor in the left side :)</p>
+    </div>
+    </div>
+</body>
+
+</html>
