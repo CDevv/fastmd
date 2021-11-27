@@ -1,10 +1,12 @@
 const electron = require('electron')
 const codemirror = require('codemirror')
 const showdown = require('showdown')
+const md = require('codemirror/mode/markdown/markdown.js')
 
 var code = codemirror.fromTextArea(document.getElementById('editor'), {
-    lineNumbers: true, 
-    theme: 'material-darker'
+    lineNumbers: true,
+    mode: 'markdown', 
+    theme: 'material-darker',
 })
 code.setSize(400, 542)
 

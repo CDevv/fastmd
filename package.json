@@ -1,5 +1,5 @@
 {
-  "name": "electron-notepad",
+  "name": "fastmd",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,8 @@
     "about-window": "^1.15.2",
     "codemirror": "^5.64.0",
     "electron": "^16.0.2",
+    "electron-builder": "^22.14.5",
+    "electron-packager": "^15.4.0",
     "showdown": "^1.9.1"
   }
 }

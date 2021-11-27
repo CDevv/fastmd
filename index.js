@@ -1,5 +1,6 @@
 const { BrowserWindow, app, Menu, dialog, ipcMain, shell } = require("electron");
 const fs = require('fs')
+const path = require("path")
 const aboutwin = require("about-window");
 const { default: openAboutWindow } = require("about-window");
 
@@ -8,7 +9,7 @@ app.whenReady().then(() => {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
-        icon: "FastMDLogo.ico",
+        icon: path.join(__dirname, "icon.ico"),
         resizable: false,
         webPreferences: {
             nodeIntegration: true,
@@ -96,7 +97,7 @@ app.whenReady().then(() => {
             label: "About",
             click: function() {
                 openAboutWindow({
-                    icon_path: './FastMDLogo.png',
+                    icon_path: path.join(__dirname, 'FastMDLogo.png'),
                     product_name: "FastMD",
                     description: "A markdown editor made by CDevv",
                 })
