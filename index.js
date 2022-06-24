@@ -1,4 +1,4 @@
-Upconst { BrowserWindow, app, Menu, dialog, ipcMain, shell } = require("electron");
+const { BrowserWindow, app, Menu, dialog, ipcMain, shell } = require("electron");
 const fs = require('fs')
 const path = require("path")
 const aboutwin = require("about-window");
