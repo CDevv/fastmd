@@ -1,4 +1,4 @@
-const { BrowserWindow, app, Menu, dialog, ipcMain, shell } = require("electron");
+Upconst { BrowserWindow, app, Menu, dialog, ipcMain, shell } = require("electron");
 const fs = require('fs')
 const path = require("path")
 const aboutwin = require("about-window");
@@ -25,7 +25,7 @@ app.whenReady().then(() => {
             label: "File",
             submenu: [
                 {
-                    label: "Render",
+                    label:"Render",
                     click: function () {
                         win.webContents.send('render', 'md');
                     }
