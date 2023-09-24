@@ -5,12 +5,18 @@ const md = require('codemirror/mode/markdown/markdown.js')
 
 var code = codemirror.fromTextArea(document.getElementById('editor'), {
     lineNumbers: true,
+    lineWrapping: true,
     mode: 'markdown', 
     theme: 'material-darker',
 })
 code.setSize(400, 542)
 
 var converter = new showdown.Converter();
+
+code.on("change", () => {
+    var res = converter.makeHtml(code.getValue());
+    document.getElementById('result').innerHTML = res;
+})
 
 //communication
 electron.ipcRenderer.on('render', (ev, msg) => {
