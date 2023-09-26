@@ -1,6 +1,6 @@
 {
   "name": "fastmd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,11 @@
   "dependencies": {
     "about-window": "^1.15.2",
     "codemirror": "^5.64.0",
-    "electron": "^16.0.2",
-    "electron-builder": "^22.14.5",
     "electron-packager": "^15.4.0",
     "showdown": "^1.9.1"
+  },
+  "devDependencies": {
+    "electron": "^26.2.2",
+    "electron-builder": "^24.6.4"
   }
 }
